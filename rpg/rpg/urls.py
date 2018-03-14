@@ -20,5 +20,7 @@ from django.urls import include, path, re_path
 urlpatterns = [
     path('charactercreator/', include('charactercreator.urls')),
     path('admin/', admin.site.urls),
+    #path('accounts/login/', auth_views.login),
+    #path('accounts/logout/', auth_views.login),
     re_path(r'^accounts/', include('allauth.urls')),
 ]
